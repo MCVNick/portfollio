@@ -21,11 +21,21 @@ async function mail(req) {
     }
   });
 
+  const output =  `
+  <h2>You have someone trying to contact you</h2>
+  <h3>Contact Details</h3>
+  <p>Name: ${req.body.name}</p>
+  <p>Email: ${req.body.from}</p>
+  <h3>Message</h3>
+  <p> ${req.body.message}</p>
+  `
+
   const mailOptions = {
-    from: `${req.body.from}`,
+    from: `${GMAIL_USER}`,
     to: `${GMAIL_USER}`,
-    subject: `${req.body.name}`,
-    text: `${req.body.message}`,
+    subject: `Portfolio Contact`,
+    text: ``,
+    html: output
   }
 
   transporter.sendMail(mailOptions, (err) => {
