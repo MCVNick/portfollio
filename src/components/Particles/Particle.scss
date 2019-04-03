@@ -1,6 +1,10 @@
 
 div#particle-parent-comp {
-    position: fixed;
-    top: 0px;
-    width: 100%;
+    
+    div {
+        position: fixed;
+        top: 0px;
+        width: 100vw;
+        height: 100vh;
+    }
 }
