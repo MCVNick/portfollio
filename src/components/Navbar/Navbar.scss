@@ -7,10 +7,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
+    min-width: $min-header-width;
+
     
     div {
         width: 50%;
-        min-width: 578px;
+        min-width: $min-header-width;
         display: flex;
         flex-direction: row;
 

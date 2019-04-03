@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom'
 
 import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
 import routes from './routes'
 
 import './reset.scss';
@@ -15,7 +14,6 @@ class App extends Component {
         <Router>
           <Navbar />
           {routes}
-          <Footer />
         </Router>
       </div>
     );

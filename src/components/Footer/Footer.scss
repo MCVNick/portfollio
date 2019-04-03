@@ -4,13 +4,12 @@
     height: 50px;
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: 10px;
     width: 100%;
+    min-width: $min-header-width;
     
     div {
         width: 50%;
-        min-width: 578px;
+        min-width: $min-header-width;
         align-items: center;
         flex-direction: row;
         display: flex;
@@ -18,7 +17,7 @@
         p {
             margin-right: auto;
         }
-    
+        
         img {
             width: 50px;
             padding: 0 10px;

@@ -1,7 +1,6 @@
-#particle-parent-comp {
-    div {
-        canvas {
-            position: fixed !important;
-        }
-    }
+
+div#particle-parent-comp {
+    position: fixed;
+    top: 0px;
+    width: 100%;
 }
