@@ -10,7 +10,7 @@
         align-items: center;
         justify-content: center;
         min-width: $min-header-width;
-        min-height: 300px;
+        min-height: 500px;
 
         section {
             max-width: 50%;
@@ -18,7 +18,7 @@
             position: absolute;
             
             h1 {
-                font-size: 36px;
+                font-size: 38px;
                 padding: 10px;
                 z-index: 1;
                 min-width: $min-header-width;
@@ -26,7 +26,7 @@
     
             p {
                 border-top: 1px solid $primary-text-color;
-                font-size: 16px;
+                font-size: 27px;
                 padding: 10px;
                 z-index: 1;
                 min-width: $min-header-width;
@@ -34,20 +34,16 @@
         }
     }
 }
-@media (max-height: 449px) {
+@media (max-height: 629px) {
     #about-me-parent-comp {
-        height: 450px;
-
+        height: 550px;
         #foot-parent-comp {
-            top: 100px;
         }
     }
 }
 
 @media (min-height: 450px) {
     #about-me-parent-comp {
-        height: 75vh;
-
         #foot-parent-comp {
             position: absolute;
             bottom: 10px;
