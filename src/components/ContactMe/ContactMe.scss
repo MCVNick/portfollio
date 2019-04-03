@@ -2,4 +2,80 @@
 
 #contact-me-parent-comp {
     width: 100%;
+
+    .contact-me {
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .contact-header {
+            padding: 15px;
+            z-index: 1;
+        }
+
+        section {
+            a {
+                z-index: 1;
+                img {
+                    width: 50px;
+                    padding: 0 10px;
+                }
+            }
+            h1 {
+                z-index: 1;
+            }
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 200px 100px 100px;
+            grid-template-rows: 30px 30px 30px;
+            grid-gap: 5px;
+            grid-template-areas:
+                "email message message"
+                "name message message"
+                "- - button";
+
+            input {
+                z-index: 1;
+                font-size: 12px;
+            }
+
+            .email-input {
+                grid-area: email;
+            }
+
+            .name-input {
+                grid-area: name;
+            }
+
+            .message-input {
+                grid-area: message;
+                z-index: 1;
+                resize: none;              
+            }
+
+            button {
+                grid-area: button;
+                z-index: 1;
+            }
+        }
+    }
+}
+@media (max-height: 629px) {
+    #contact-me-parent-comp {
+        height: 550px;
+    }
+}
+
+@media (min-height: 450px) {
+    #contact-me-parent-comp {
+        #foot-parent-comp {
+            position: absolute;
+            bottom: 10px;
+        }
+    }
 }

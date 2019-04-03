@@ -1,9 +1,9 @@
 import React from 'react'
 
 import Particle from './../Particles/Particle'
+import Footer from '../Footer/Footer';
 
 import './Home.scss'
-import Footer from '../Footer/Footer';
 
 const Home = () => {
     return (

@@ -23,35 +23,35 @@ const Skills = () => {
                 </div>
                 <ul>
                     <li>
-                        <a href='https://reactjs.org/docs/getting-started.html'><img src={ReactIcon} alt='React' /></a>
+                        <a target="_blank" rel="noopener noreferrer" href='https://reactjs.org/docs/getting-started.html'><img src={ReactIcon} alt='React' /></a>
                         <h1>React</h1>
                     </li>
                     <li>
-                        <a href='https://devdocs.io/javascript/'><img src={JavaScript} alt='JavaScript' /></a>
+                        <a target="_blank" rel="noopener noreferrer" href='https://devdocs.io/javascript/'><img src={JavaScript} alt='JavaScript' /></a>
                         <h1>JavaScript</h1>
                     </li>
                     <li>
-                        <a href='https://devdocs.io/html/'><img src={HTML5} alt='HTML5' /></a>
+                        <a target="_blank" rel="noopener noreferrer" href='https://devdocs.io/html/'><img src={HTML5} alt='HTML5' /></a>
                         <h1>HTML5</h1>
                     </li>
                     <li>
-                        <a href='https://devdocs.io/css/'><img src={CSS3} alt='CSS3' /></a>
+                        <a target="_blank" rel="noopener noreferrer" href='https://devdocs.io/css/'><img src={CSS3} alt='CSS3' /></a>
                         <h1>CSS3</h1>
                     </li>
                     <li>
-                        <a href='https://www.postgresql.org/docs/'><img src={PostgreSQL} alt='PostgreSQL' /></a>
+                        <a target="_blank" rel="noopener noreferrer" href='https://www.postgresql.org/docs/'><img src={PostgreSQL} alt='PostgreSQL' /></a>
                         <h1>PostgreSQL</h1>
                     </li>
                     <li>
-                        <a href='https://nodejs.org/en/docs/'><img src={NodeJS} alt='Node.JS' /></a>
+                        <a target="_blank" rel="noopener noreferrer" href='https://nodejs.org/en/docs/'><img src={NodeJS} alt='Node.JS' /></a>
                         <h1>Node.JS</h1>
                     </li>
                     <li>
-                        <a href='https://expressjs.com/en/api.html'><img src={Express} alt='Express' /></a>
+                        <a target="_blank" rel="noopener noreferrer" href='https://expressjs.com/en/api.html'><img src={Express} alt='Express' /></a>
                         <h1>Express</h1>
                     </li>
                     <li>
-                        <a href='https://redux.js.org/'><img src={Redux} alt='Redux' /></a>
+                        <a target="_blank" rel="noopener noreferrer" href='https://redux.js.org/'><img src={Redux} alt='Redux' /></a>
                         <h1>Redux</h1>
                     </li>
                 </ul>
