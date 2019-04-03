@@ -17,14 +17,22 @@
         }
 
         section {
+            border-bottom: 1px solid $primary-text-color;
+            max-width: 50%;
+            min-width: $min-header-width;
+            margin-bottom: 25px;
+
             a {
                 z-index: 1;
+
                 img {
+                    margin: 15px 0;
                     width: 50px;
                     padding: 0 10px;
                 }
             }
             h1 {
+                padding: 3px;
                 z-index: 1;
             }
         }
@@ -61,6 +69,9 @@
             button {
                 grid-area: button;
                 z-index: 1;
+                background: #222;
+                color: inherit;
+                outline: none;
             }
         }
     }
