@@ -50,6 +50,8 @@
             input {
                 z-index: 1;
                 font-size: 12px;
+                opacity: 0.8;
+                padding: 0 5px;
             }
 
             .email-input {
@@ -63,7 +65,9 @@
             .message-input {
                 grid-area: message;
                 z-index: 1;
-                resize: none;              
+                padding: 5px;
+                resize: none;
+                opacity: 0.8;
             }
 
             button {
@@ -72,10 +76,46 @@
                 background: #222;
                 color: inherit;
                 outline: none;
+                opacity: .8;
+            }
+
+            button:hover {
+                opacity: 1;
+            }
+
+            input:hover, .message-input:hover, input:focus, .message-input:focus {
+                opacity: 1;
+            }
+
+            .pass {
+                animation-name: 'pass';
+                animation-timing-function: linear;
+                animation-duration: 0.5s;
+                animation-iteration-count: 1;
+            }
+
+            .fail {
+                animation-name: 'fail';
+                animation-timing-function: linear;
+                animation-duration: 0.5s;
+                animation-iteration-count: 1;
             }
         }
     }
 }
+
+@keyframes pass {
+    0% {background-color: inherit;}
+    50% {background-color: darkgreen;}
+    100% {background-color: inherit;}
+}
+
+@keyframes fail {
+    0% {background-color: inherit;}
+    50% {background-color: darkred;}
+    100% {background-color: inherit;}
+}
+
 @media (max-height: 629px) {
     #contact-me-parent-comp {
         height: 550px;

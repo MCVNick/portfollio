@@ -27,6 +27,12 @@
                     text-decoration: none;
                 }
             }
+            li:hover {
+                background: rgba(16, 68, 120, 0.6);
+            }
+            .selected, .selected:hover {
+                background: rgba(16, 68, 120, 1.0);
+            }
         }
     
         h1 {

@@ -18,7 +18,7 @@
             position: absolute;
             
             h1 {
-                font-size: 38px;
+                font-size: 36px;
                 padding: 10px;
                 z-index: 1;
                 min-width: $min-header-width;
@@ -26,7 +26,7 @@
     
             p {
                 border-top: 1px solid $primary-text-color;
-                font-size: 27px;
+                font-size: 23px;
                 padding: 10px;
                 z-index: 1;
                 min-width: $min-header-width;
@@ -36,7 +36,7 @@
 }
 @media (max-height: 629px) {
     #about-me-parent-comp {
-        height: 550px;
+        height: 510px;
     }
 }
 
