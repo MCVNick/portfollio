@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 
 import './Home.scss'
 
-const Home = () => {
+const Home = (props) => {
     return (
         <main id='home-parent-comp'>
             <div className='home-header-parent'>
@@ -16,6 +16,7 @@ const Home = () => {
                     </div>
                 </section>
             </div>
+            <div className='secret-blank-page' onClick={() => {console.log(props.history.push('/blank'))}}></div>
             <Footer />
             <Particle />
         </main>
