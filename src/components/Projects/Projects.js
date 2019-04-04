@@ -14,9 +14,19 @@ const Projects = () => {
                 <h2>Projects</h2>
                 <article>
                     <h1>NSL Personal Project</h1>
-                    <div className='contain-video'><video src={nslVideo} controls='controls'/></div>
-                    <a target="_blank" rel="noopener noreferrer" href='https://github.com/MCVNick/nsl-classifieds'>NSL GitHub</a>
-                    <a target="_blank" rel="noopener noreferrer" href='https://nsl.nicholasmcqueen.com/'>NSL Website</a>
+                    <details>
+                        <summary>Video Walkthrough</summary>
+                        <div className='contain-video'><video src={nslVideo} controls='controls'/></div>
+                    </details>
+                    <details>
+                        <summary>Embedded Website</summary>
+                        <div className='nsl-embedded'><iframe title='NSL' src="https://nsl.nicholasmcqueen.com/" frameborder="0"></iframe></div>
+                    </details>
+                    <div className='links'>
+                        <a target="_blank" rel="noopener noreferrer" href='https://github.com/MCVNick/nsl-classifieds'>NSL GitHub</a>
+                        <p>|</p>
+                        <a target="_blank" rel="noopener noreferrer" href='https://nsl.nicholasmcqueen.com/'>NSL Website</a>
+                    </div>
                     <p>This was a three week project that I was able to work on cloning 
                         KSL's website. In this project I learned how to use CSS Grid, 
                         SCSS, JavaScript to manipulate classes and cause tabs to close.
