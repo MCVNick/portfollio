@@ -4,6 +4,7 @@ import Particle from './../Particles/Particle'
 import Footer from './../Footer/Footer'
 
 import nslVideo from './../../resources/nslVideo.mp4'
+import pearProgrammingVideo from './../../resources/PearProgrammingVideo.mp4'
 
 import './Projects.scss'
 
@@ -20,6 +21,11 @@ const Projects = () => {
                     </details>
                     <details>
                         <summary>Embedded Website</summary>
+                        <p>
+                            Note: The website updates periodically to not hit an API 
+                            cap. You may need to refresh the page if clicking on an
+                            article results in an empty page.
+                        </p>
                         <div className='nsl-embedded'><iframe title='NSL' src="https://nsl.nicholasmcqueen.com/" frameborder="0"></iframe></div>
                     </details>
                     <div className='links'>
@@ -30,10 +36,34 @@ const Projects = () => {
                     <p>This was a three week project that I was able to work on cloning 
                         KSL's website. In this project I learned how to use CSS Grid, 
                         SCSS, JavaScript to manipulate classes and cause tabs to close.
-                         I also worked on form validation and the back end. The back 
-                         end used massive. It also was able to control when the web 
-                         page loaded new content. This allowed for the API that I was 
-                         using to not hit it's daily limit.
+                        I also worked on form validation and the back end. The back 
+                        end used massive. It also was able to control when the web 
+                        page loaded new content. This allowed for the API that I was 
+                        using to not hit it's daily limit.
+                    </p>
+                </article>
+                <article>
+                    <h1>PearProgramming Group Project</h1>
+                    <details>
+                        <summary>Video Walkthrough</summary>
+                        <div className='contain-video'><video src={pearProgrammingVideo} controls='controls'/></div>
+                    </details>
+                    <div className='links'>
+                        <a target="_blank" rel="noopener noreferrer" href='https://github.com/sudorm-rfdot/pearprogramming'>PearProgramming GitHub</a>
+                        <p>|</p>
+                        <a target="_blank" rel="noopener noreferrer" href='https://pearprogramming.co/'>PearProgramming Website</a>
+                    </div>
+                    <p className='not-ending-article-p-tag'>
+                        This is another three week project that I worked on at DevMountain.
+                        During this project I worked with three other members to create an
+                        online code editor. We used Monaco, Socket.io, Amazon S3, React
+                        Dropzone, SCSS, bcrypt, express, massive, and many more. This
+                        project also had lots of form validation.
+                    </p>
+                    <p>
+                        Working on a team was amazing. We all came up with solutions and
+                        worked together very well. During this project we also learned to
+                        develop our skills on GitHub.
                     </p>
                 </article>
             </div>

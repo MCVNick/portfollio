@@ -12,7 +12,7 @@ const Home = () => {
                 <section>
                     <div>
                         <h1>Nick McQueen</h1>
-                        <h2>Web Designer</h2>
+                        <h2>Web Developer</h2>
                     </div>
                 </section>
             </div>
