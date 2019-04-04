@@ -22,9 +22,10 @@
             display: flex;
             flex-direction: row;
             li {
-                padding: 15px;
+                display: flex;
                 a {
-                    text-decoration: none;
+                padding: 15px;
+                text-decoration: none;
                 }
             }
             li:hover {
