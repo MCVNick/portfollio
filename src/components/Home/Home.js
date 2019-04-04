@@ -16,8 +16,8 @@ const Home = () => {
                     </div>
                 </section>
             </div>
-            <Particle />
             <Footer />
+            <Particle />
         </main>
     )
 }

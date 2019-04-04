@@ -56,8 +56,8 @@ const Skills = () => {
                     </li>
                 </ul>
             </div>
-            <Particle />
             <Footer />
+            <Particle />
         </main>
     )
 }

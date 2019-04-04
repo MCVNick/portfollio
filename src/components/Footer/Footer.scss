@@ -16,11 +16,13 @@
         
         p {
             margin-right: auto;
+            z-index: 1;
         }
         
         img {
             width: 50px;
             padding: 0 10px;
+            z-index: 1;
         }
     }
 }

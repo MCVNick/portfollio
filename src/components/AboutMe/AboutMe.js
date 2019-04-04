@@ -27,8 +27,8 @@ const AboutMe = () => {
                     </p>
                 </section>
             </div>
-            <Particle />
             <Footer />
+            <Particle />
         </main>
     )
 }

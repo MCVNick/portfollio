@@ -67,8 +67,8 @@ const Projects = () => {
                     </p>
                 </article>
             </div>
-            <Particle />
             <Footer />
+            <Particle />
         </main>
     )
 }

@@ -7,7 +7,6 @@
         font-size: 32px;
         padding: 10px;
         z-index: 1;
-        padding-bottom: 10px;
         border-bottom: 1px solid $primary-text-color;
         width: 100%;
         text-align: center;
@@ -102,6 +101,7 @@
                     border: none;
                     margin-top: 25px;
                     margin-bottom: 3px;
+                    user-select: text;
                 }
             }
             
@@ -121,6 +121,7 @@
                 // margin: 3px;
                 border-bottom: 1px solid $primary-text-color;
                 padding-bottom: 25px;
+                user-select: text;
             }
 
             .not-ending-article-p-tag {

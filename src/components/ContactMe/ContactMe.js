@@ -55,8 +55,8 @@ const ContactMe = () => {
                     <button ref={buttonRef}>Send</button>
                 </form>
             </div>
-            <Particle />
             <Footer />
+            <Particle />
         </main>
     )
 }
