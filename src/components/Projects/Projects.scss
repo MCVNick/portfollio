@@ -33,12 +33,24 @@
             align-items: center;
             max-width: 50%;
             min-width: $min-header-width;
+            
+            .contain-video {
+                width: 100%;
+                height: 56.25%;
+                height: 0px;
+                padding-bottom: 56.25%;
+                position: relative;
 
-            video {
-                max-width: 100%;
-                min-width: $min-header-width;
-                margin: 0 0 25px 0;
-                z-index: 1;
+                video {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    height: 100%;
+                    width: 100%;
+                    margin: 0 0 25px 0;
+                    z-index: 1;
+                    background-color: $primary-text-color;
+                }
             }
             
             a {
@@ -57,7 +69,7 @@
         }
     }
 }
-@media (min-height: 1320px) {
+@media (min-height: 1220px) {
     #projects-parent-comp {
         #foot-parent-comp {
             position: absolute;

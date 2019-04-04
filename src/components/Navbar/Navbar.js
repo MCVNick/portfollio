@@ -1,10 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 
 import './Navbar.scss'
 
-const Navbar = () => {
+const Navbar = (props) => {
+    try {console.log(props)}catch(e){}
     return (
+        props.location.pathname !== '/blank' &&
         <nav id='nav-parent-comp'>
             <div>
                 <ul>
@@ -20,4 +22,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default withRouter(Navbar)
