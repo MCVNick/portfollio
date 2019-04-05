@@ -5,6 +5,7 @@ import Footer from './../Footer/Footer'
 
 import nslVideo from './../../resources/nslVideo.mp4'
 import pearProgrammingVideo from './../../resources/PearProgrammingVideo.mp4'
+import mtgVideo from './../../resources/mtgVideo.mp4'
 
 import './Projects.scss'
 
@@ -64,6 +65,23 @@ const Projects = () => {
                         Working on a team was amazing. We all came up with solutions and
                         worked together very well. During this project we also learned to
                         develop our skills on GitHub.
+                    </p>
+                </article>
+                <article>
+                    <h1>Magic Card Personal Project</h1>
+                    <details>
+                        <summary>Video Walkthrough</summary>
+                        <div className='contain-video'><video src={mtgVideo} controls='controls'/></div>
+                    </details>
+                    <div className='links'>
+                        <a target="_blank" rel="noopener noreferrer" href='https://github.com/MCVNick/crud-magic-api'>PearProgramming GitHub</a>
+                    </div>
+                    <p>
+                        This was my very first project at DevMountain. It was a project that
+                        taught us that we were supposed to use full CRUD (Create, Read, Update,
+                        and Delete) on websites. In my app I was able to search through a
+                        catalog of Magic cards. There were 260,000 cards it could search for and
+                        find.
                     </p>
                 </article>
             </div>
