@@ -12,7 +12,7 @@
 
         .skills-header {
             max-width: 50%;
-            min-width: $min-header-width;
+            // min-width: $min-header-width;
 
             h1 {
                 font-size: 40px;
@@ -24,7 +24,7 @@
         
         ul {
             max-width: 50%;
-            min-width: $min-header-width;
+            // min-width: $min-header-width;
             display: grid;
             grid-template-rows: auto auto auto auto;
             grid-template-columns: auto auto auto auto;

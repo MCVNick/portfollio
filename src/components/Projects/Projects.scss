@@ -11,7 +11,7 @@
         width: 100%;
         text-align: center;
         max-width: 50%;
-        min-width: $min-header-width;
+        // min-width: $min-header-width;
         margin-top: 50px;
     }
 
@@ -32,7 +32,7 @@
             flex-direction: column;
             align-items: center;
             max-width: 50%;
-            min-width: $min-header-width;
+            // min-width: $min-header-width;
 
             details {
                 width: 100%;
@@ -111,7 +111,7 @@
                 height: 360px;
                 width: 640px;
                 max-width: 50%;
-                min-width: $min-header-width;
+                // min-width: $min-header-width;
                 overflow-y: scroll;
             }
             

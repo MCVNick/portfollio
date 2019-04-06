@@ -2,19 +2,19 @@
 
 #about-me-parent-comp {
     width: 100%;
-    min-width: $min-header-width;
+    // min-width: $min-header-width;
     
     .about-me {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        min-width: $min-header-width;
+        // min-width: $min-header-width;
         min-height: 500px;
 
         section {
             max-width: 50%;
-            min-width: $min-header-width;
+            // min-width: $min-header-width;
             position: absolute;
             
             h1 {
@@ -29,7 +29,7 @@
                 font-size: 23px;
                 padding: 10px;
                 z-index: 1;
-                min-width: $min-header-width;
+                // min-width: $min-header-width;
                 user-select: text;
             }
         }
