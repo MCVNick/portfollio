@@ -37,7 +37,7 @@
 }
 @media (max-height: 629px) {
     #about-me-parent-comp {
-        height: 510px;
+        // height: 510px;
     }
 }
 
@@ -46,6 +46,122 @@
         #foot-parent-comp {
             position: absolute;
             bottom: 10px;
+        }
+    }
+}
+
+@media (min-width: 426px) {
+    #about-me-parent-comp {
+        .about-me {
+            height: 100%;
+            min-height: 0px;
+            width: 100%;
+            padding: 20px 0;
+            section {
+                position: static;
+                max-width: 100%;
+            }
+        }
+        #foot-parent-comp {
+            width: 100%;
+            position: absolute;
+            bottom: 10px;
+
+            div {
+                width: 100%;
+                p {
+                    text-align: center;
+                }
+            }
+        }
+        @media (min-width: 481px) {
+            @media (max-height: 655px) {
+                #foot-parent-comp {
+                    position: static;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 426px), (max-width: 480px) {
+    @media (max-height: 675px) {
+        #foot-parent-comp {
+            position: static;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    #about-me-parent-comp {
+        .about-me {
+            height: 100%;
+            min-height: 0px;
+            width: 100%;
+            padding: 20px 0;
+            section {
+                position: static;
+                max-width: 100%;
+                h1 {
+                    font-size: 26px;
+                }
+                p {
+                    font-size: 19px;
+                }
+            }
+        }
+        #foot-parent-comp {
+            width: 100%;
+            position: absolute;
+            bottom: 10px;
+
+            div {
+                width: 100%;
+                p {
+                    text-align: center;
+                }
+            }
+        }
+        @media (max-width: 425px) {
+            @media (max-height: 625px) {
+                #foot-parent-comp {
+                    position: static;
+                }
+            }
+        }
+        @media (min-width: 361px) {
+            @media (max-height: 595px) {
+                #foot-parent-comp {
+                    position: static;
+                }
+            }
+        }
+        @media (max-width: 360px) {
+            @media (max-height: 575px) {
+                #foot-parent-comp {
+                    position: static;
+                }
+            }
+        }
+        @media (max-width: 300px) {
+            @media (max-height: 720px) {
+                #foot-parent-comp {
+                    position: static;
+                }
+            }
+        }
+        @media (max-width: 275px) {
+            @media (max-height: 770px) {
+                #foot-parent-comp {
+                    position: static;
+                }
+            }
+        }
+        @media (max-width: 250px) {
+            @media (max-height: 850px) {
+                #foot-parent-comp {
+                    position: static;
+                }
+            }
         }
     }
 }
