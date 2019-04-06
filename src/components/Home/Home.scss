@@ -92,3 +92,83 @@
         height: 88vh;
     }
 }
+
+
+
+@media (max-width: 320px) {
+    #home-parent-comp {
+        min-width: 0px;
+        .home-header-parent {
+            min-width: 0px;
+            padding: 0px;
+            section {
+                min-width: 0px;
+                min-height: 150px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                div {
+                    padding: 25px 5px;
+                    h1 {
+                        font-size: 26px;
+                    }
+
+                    h2 {
+                        font-size: 20px;                        
+                    }
+                }
+                @media (min-height: 325px) {
+                    min-height: 200px;
+                }
+                @media (min-height: 350px) {
+                    min-height: 225px;
+                }
+                @media (min-height: 375px) {
+                    min-height: 250px;
+                }
+                @media (min-height: 400px) {
+                    min-height: 275px;
+                }
+                @media (min-height: 425px) {
+                    min-height: 300px;
+                }
+                @media (min-height: 450px) {
+                    min-height: 335px;
+                }
+                @media (min-height: 475px) {
+                    min-height: 350px;
+                }
+                @media (min-height: 500px) {
+                    min-height: 375px;
+                }
+                @media (min-height: 525px) {
+                    min-height: 400px;
+                }
+            }
+        }
+
+        .secret-blank-page {
+            top: 0px;
+            left: 0px;
+        }
+
+        #foot-parent-comp {
+            width: 100%;
+            position: absolute;
+            bottom: 10px;
+
+            div {
+                width: 100%;
+                p {
+                    text-align: center;
+                }
+            }
+        }
+        @media (max-height: 275px) {
+            #foot-parent-comp {
+                position: static;
+            }
+        }
+    }
+}

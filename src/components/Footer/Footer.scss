@@ -26,3 +26,24 @@
         }
     }
 }
+
+@media (max-width: 320px) {
+    #foot-parent-comp {
+        min-width: 0px;
+        div {
+            min-width: 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            
+            p {
+                font-size: 12px;
+                margin-right: 0;
+            }
+            
+            img {
+            }
+        }
+    }
+}

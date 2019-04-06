@@ -10,4 +10,46 @@
     a {
         color: inherit;
     }
+
+    .not-supported {
+        display: none;
+    }
+
+    #not-supported-particles {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .App {
+        min-width: 0px;
+    }
+}
+
+@media(max-width: 219px) {
+    .App {
+        overflow: hidden;
+        .not-supported, #not-supported-particles {
+            display: initial;
+        }
+        .not-supported {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+        }
+        #not-supported-particles {
+            z-index: 1;
+        }
+        #nav-parent-comp, #home-parent-comp, #about-me-parent-comp,
+        #skills-parent-comp, #projects-parent-comp, #contact-me-parent-comp,
+        #blank-parent-comp {
+            display: none;
+        }
+    }
 }
