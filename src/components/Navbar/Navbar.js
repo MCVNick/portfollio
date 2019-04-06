@@ -47,15 +47,16 @@ function handleMenuClick(navMenu, slideMenu, list) {
 
     nav.add('none')
     slide.remove('none')
-    list.current.scrollLeft += 100
+    let scrollWidth = list.current.scrollWidth - list.current.clientWidth
+    list.current.scrollLeft += (scrollWidth / 2)
 
-    for (let i = 0; i < 200; i++) {
-        if (i < 50) {
-            setTimeout(function () {list.current.scrollLeft += 1}, i*6)
-        } else if (i < 150) {
-            setTimeout(function () {list.current.scrollLeft -= 1}, i*6)
+    for (let i = 0; i < scrollWidth; i++) {
+        if (i < (scrollWidth / 4)) {
+            setTimeout(function () {list.current.scrollLeft += 1}, i*5)
+        } else if (i < (3 * scrollWidth / 4)) {
+            setTimeout(function () {list.current.scrollLeft -= 1}, i*5)
         } else {
-            setTimeout(function () {list.current.scrollLeft += 1}, i*6)
+            setTimeout(function () {list.current.scrollLeft += 1}, i*5)
         }
     }
 }
