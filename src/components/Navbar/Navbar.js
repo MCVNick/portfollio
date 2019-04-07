@@ -26,7 +26,9 @@ class Navbar extends Component {
     }
 
     componentDidMount() {
-        this.handleScroll(this.list)
+        if (this.list.current) {
+            this.handleScroll(this.list)
+        }
     }
 
     render() {
