@@ -1,36 +1,81 @@
 @import './../../variables';
 
-#about-me-parent-comp {
-    width: 100%;
-    // min-width: $min-header-width;
-    
-    .about-me {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        // min-width: $min-header-width;
-        min-height: 500px;
+@media (min-width: 220px) and (max-width: 620px) {
+    #about-me-parent-comp {
+        width: 100%;
+        padding-top: 10px;
+        
+        .about-me {
+            min-height: calc(100vh - 140px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
-        section {
-            max-width: 50%;
-            // min-width: $min-header-width;
-            position: absolute;
-            
-            h1 {
-                font-size: 36px;
-                padding: 10px;
-                z-index: 1;
-                width: 200px;
+            section {
+                h1 {
+                    font-size: 26px;
+                    padding: 10px;
+                    z-index: 1;
+                    width: 200px;
+                }
+        
+                p {
+                    border-top: 1px solid $primary-text-color;
+                    font-size: 14px;
+                    padding: 10px;
+                    z-index: 1;
+                    user-select: text;
+                }
             }
-    
-            p {
-                border-top: 1px solid $primary-text-color;
-                font-size: 23px;
-                padding: 10px;
-                z-index: 1;
-                // min-width: $min-header-width;
-                user-select: text;
+        }
+    }
+}
+
+@media (min-width: 480px) {
+    #about-me-parent-comp {
+        .about-me {
+            section {
+                h1 {
+                    font-size: 30px;
+                }
+        
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 621px) {
+    #about-me-parent-comp {
+        width: 100%;
+        padding-top: 10px;
+        
+        .about-me {
+            min-height: calc(100vh - 170px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            section {
+                max-width: 620px;
+                h1 {
+                    font-size: 36px;
+                    padding: 10px;
+                    z-index: 1;
+                    width: 200px;
+                }
+        
+                p {
+                    border-top: 1px solid $primary-text-color;
+                    font-size: 23px;
+                    padding: 10px;
+                    z-index: 1;
+                    user-select: text;
+                }
             }
         }
     }

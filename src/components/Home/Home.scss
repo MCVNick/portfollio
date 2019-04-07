@@ -1,53 +1,5 @@
 @import './../../variables';
 
-// #home-parent-comp {
-//     width: 100%;
-//     // min-width: $min-header-width;
-//     background: inherit;
-    
-//     .home-header-parent {
-//         width: 100%;
-//         height: 100%;
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: center;
-//         align-items: center;
-//         background-image: url('./../../resources/Stars.png');
-//         background-size: cover;
-//         background-repeat: no-repeat;
-//         z-index: 1;
-//         padding: 250px;
-//         // min-width: $min-header-width;
-        
-//         section {
-//             z-index: 2;
-//             // min-width: $min-header-width;
-//             div {
-//                 border: 1px solid $primary-text-color;
-//                 padding: 60px 120px;
-//                 text-align: center;
-                
-//                 h1 {
-//                     font-size: 36px;
-//                     font-weight: 500;
-//                 }
-//                 h2 {
-//                     font-size: 30px;
-//                 }
-//             }
-//         }
-//     }
-    
-//     .secret-blank-page {
-//         position: fixed;
-//         top: 0px;
-//         right: 0px;
-//         width: 30px;
-//         height: 30px;
-//         z-index: 2;
-//     }
-// }
-
 @media (min-width: 220px) and (max-width: 320px) {
     #home-parent-comp {
         width: 100%;
