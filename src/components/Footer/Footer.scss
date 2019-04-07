@@ -44,12 +44,33 @@
                 margin-right: auto;
                 margin-left: 10px;
                 z-index: 1;
+                font-size: 12px;
             }
             
             img {
                 width: 50px;
                 padding: 0 10px;
                 z-index: 1;
+            }
+        }
+    }
+}
+
+@media (min-width: 220px) and (max-width: 306px) {
+    #foot-parent-comp {
+        div {
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media (min-width: 220px) and (max-width: 306px) {
+    #foot-parent-comp {
+        div {
+            p {
+                font-size: 8px;
             }
         }
     }
@@ -67,6 +88,7 @@
             flex-direction: row;
             display: flex;
             width: 100%;
+            max-width: 620px;
             
             p {
                 margin-right: auto;
@@ -79,15 +101,6 @@
                 padding: 0 10px;
                 z-index: 1;
             }
-        }
-    }
-}
-
-@media (min-width: 621px)  {
-    #foot-parent-comp {
-        div {
-            min-width: 621px;
-            max-width: 50%;
         }
     }
 }
