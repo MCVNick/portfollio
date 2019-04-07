@@ -1,132 +1,97 @@
 @import './../../variables';
 
-#nav-parent-comp {
-    background: $primary-header-color;
-    width: 100%;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    // min-width: $min-header-width;
+// #nav-parent-comp {
+//     background: $primary-header-color;
+//     width: 100%;
+//     height: 90px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     z-index: 1;
+//     // min-width: $min-header-width;
 
     
-    div {
-        width: 50%;
-        // min-width: $min-header-width;
-        display: flex;
-        flex-direction: row;
+//     div {
+//         width: 50%;
+//         // min-width: $min-header-width;
+//         display: flex;
+//         flex-direction: row;
 
 
-        ul {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
+//         ul {
+//             display: flex;
+//             flex-direction: row;
+//             width: 100%;
             
-            li {
-                display: flex;
-                a {
-                    padding: 15px;
-                    text-decoration: none;
-                    white-space: nowrap;
-                }
-            }
-            li:hover {
-                background: rgba(16, 68, 120, 0.6);
-            }
-            .selected, .selected:hover {
-                background: rgba(16, 68, 120, 1.0);
-            }
-        }
+//             li {
+//                 display: flex;
+//                 a {
+//                     padding: 15px;
+//                     text-decoration: none;
+//                     white-space: nowrap;
+//                 }
+//             }
+//             li:hover {
+//                 background: rgba(16, 68, 120, 0.6);
+//             }
+//             .selected, .selected:hover {
+//                 background: rgba(16, 68, 120, 1.0);
+//             }
+//         }
     
-        h1 {
-            padding: 15px;
-            white-space: nowrap;
-            margin-left: auto;
-        }
-    }
+//         h1 {
+//             padding: 15px;
+//             white-space: nowrap;
+//             margin-left: auto;
+//         }
+//     }
 
-    .nav-menu {
-        display: none;
-    }
+//     .nav-menu {
+//         display: none;
+//     }
 
-    ol {
-        display: none;
-    }
+//     ol {
+//         display: none;
+//     }
 
-    .none {
-        display: none !important;
-    }
-}
+//     .none {
+//         display: none !important;
+//     }
+// }
 
-@media (min-width: $min-header-width) {
+@media (min-width: 220px) and (max-width: 620px){
     #nav-parent-comp {
-        div {
-            min-width: $min-header-width;
-        }
-    }
-}
-
-@media (max-width: $min-header-width) {
-    #nav-parent-comp {
+        background: $primary-header-color;
         width: 100%;
-        div {
-            width: 100%;
-            // min-width: 0px;
-            ul {
-                justify-content: center;
-                align-content: center;
-                align-items: center;
-                justify-items: center;
-            }
-
-            h1 {
-                display: none;
-            }
-        }
-    }
-}
-
-@media (max-width: 526px) {
-    #nav-parent-comp {
-        // min-width: 0px;
         height: 60px;
-        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+
         .large-navigation {
-            // min-width: 0;
             display: none;
         }
-        
-        .nav-menu {
-            display: flex;
-            flex-direction: column;
-            // min-width: 0px;
-            width: 37px;
-            height: 22px;
-            
-            .bar {
-                // min-width: 0px;
-                background: $primary-text-color;
-                width: 35px;
-                height: 6px;
-                border-radius: 5px;
-                margin: 1px;
-            }
-        }
-        
         div {
             width: 100%;
             height: 100%;
-            // min-width: 0;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
 
+            ul {
+                display: none;
+            }
+            h1 {
+                display: none;
+            }
+
             ol {
                 display: flex;
                 flex-wrap: nowrap;
                 overflow-x: auto;
+                overflow-y: hidden;
                 height: 100%;
                 
                 li {
@@ -134,13 +99,70 @@
                     display: flex;
                     flex: 0 0 auto;
                     a {
-                        height: 100%;
-                        padding: 20px;
+                        height: 10px;
+                        padding: 25px 20px;
                         text-decoration: none;
                     }
+                }
+                li:hover {
+                    background: rgba(16, 68, 120, 0.6);
+                }
+                .selected, .selected:hover {
+                    background: rgba(16, 68, 120, 1.0);
                 }
             }
         }
     }
+}
 
+@media (min-width: 621px) {
+    #nav-parent-comp {
+        background: $primary-header-color;
+        width: 100%;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+
+        div {
+            min-width: 621px;
+            max-width: 50%;
+            display: flex;
+            flex-direction: row;
+    
+    
+            ul {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                
+                li {
+                    display: flex;
+                    a {
+                        padding: 15px;
+                        text-decoration: none;
+                        white-space: nowrap;
+                    }
+                }
+                li:hover {
+                    background: rgba(16, 68, 120, 0.6);
+                }
+                .selected, .selected:hover {
+                    background: rgba(16, 68, 120, 1.0);
+                }
+            }
+        
+            h1 {
+                padding: 15px;
+                white-space: nowrap;
+                margin-left: auto;
+            }
+        }
+    
+        ol {
+            display: none;
+        }
+    }
 }
