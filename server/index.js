@@ -3,10 +3,19 @@ const { GMAIL_USER, GMAIL_PASSWORD } = process.env
 const express = require('express');
 const { json } = require('express')
 const nodemailer = require('nodemailer')
+const expressStaticGzip = require('express-static-gzip')
 
 const app = express();
 const path = require('path')
 app.use(express.static(`${__dirname}/../build`))
+app.use(`/`, expressStaticGzip(`${__dirname}`, {
+  enableBrotli: true,
+  customCompressions: [{
+      encodingName: 'deflate',
+      fileExtension: 'zz'
+  }],
+  orderPreference: ['br']
+}));
 app.use(json())
 
 const port = 4000 
