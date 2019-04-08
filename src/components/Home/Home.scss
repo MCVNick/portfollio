@@ -183,7 +183,25 @@
 @media (min-width: 621px) {
     #home-parent-comp {
         .home-header-parent {
-            height: calc(100vh - 160px);
+            height: calc(100vh - 160px);z-index: 1;
+            padding: 150px 0;
+            
+            section {
+                z-index: 2;
+                div {
+                    border: 1px solid $primary-text-color;
+                    padding: 50px 50px;
+                    text-align: center;
+                    
+                    h1 {
+                        font-size: 36px;
+                        font-weight: 500;
+                    }
+                    h2 {
+                        font-size: 30px;
+                    }
+                }
+            }
         }
     }
 }

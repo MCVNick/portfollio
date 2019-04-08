@@ -2,29 +2,22 @@
 
 #contact-me-parent-comp {
     width: 100%;
-
     .contact-me {
-        min-height: 500px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
-
+        min-height: calc(100vh - 140px);
         .contact-header {
-            padding: 15px;
+            padding: 15px 0;
             z-index: 1;
         }
-
         section {
             border-bottom: 1px solid $primary-text-color;
-            max-width: 50%;
-            // min-width: $min-header-width;
             margin-bottom: 25px;
-
             a {
                 z-index: 1;
-
                 img {
                     margin: 15px 0;
                     width: 50px;
@@ -32,37 +25,32 @@
                 }
             }
             h1 {
-                padding: 3px;
+                padding: 3px 0;
                 z-index: 1;
                 user-select: text;
             }
         }
-
         form {
             display: grid;
-            grid-template-columns: 200px 100px 100px;
+            // grid-template-columns: 200px 100px 100px;
             grid-template-rows: 30px 30px 30px;
             grid-gap: 5px;
             grid-template-areas:
                 "email message message"
                 "name message message"
                 "- - button";
-
             input {
                 z-index: 1;
                 font-size: 12px;
                 opacity: 0.8;
                 padding: 0 5px;
             }
-
             .email-input {
                 grid-area: email;
             }
-
             .name-input {
                 grid-area: name;
             }
-
             .message-input {
                 grid-area: message;
                 z-index: 1;
@@ -70,7 +58,6 @@
                 resize: none;
                 opacity: 0.8;
             }
-
             button {
                 grid-area: button;
                 z-index: 1;
@@ -78,8 +65,8 @@
                 color: inherit;
                 outline: none;
                 opacity: .8;
+                padding: 5px;
             }
-
             button:hover {
                 opacity: 1;
             }
@@ -87,19 +74,39 @@
             input:hover, .message-input:hover, input:focus, .message-input:focus {
                 opacity: 1;
             }
-
             .pass {
                 animation-name: 'pass';
                 animation-timing-function: linear;
                 animation-duration: 0.5s;
                 animation-iteration-count: 1;
             }
-
             .fail {
                 animation-name: 'fail';
                 animation-timing-function: linear;
                 animation-duration: 0.5s;
                 animation-iteration-count: 1;
+            }
+        }
+    }
+}
+
+@media (min-width: 220px) and (max-width: 320px) {
+    #contact-me-parent-comp {
+        .contact-me {
+            section {
+                h1 {
+                    font-size: 15px;
+                }
+            }
+            form {
+                grid-template-columns: 200px;
+                grid-template-rows: 30px 30px 100px 30px;
+                grid-gap: 5px;
+                grid-template-areas:
+                    "email"
+                    "name"
+                    "message"
+                    "button";
             }
         }
     }
@@ -115,19 +122,4 @@
     0% {background-color: inherit;}
     50% {background-color: darkred;}
     100% {background-color: inherit;}
-}
-
-@media (min-height: 450px) {
-    #contact-me-parent-comp {
-        #foot-parent-comp {
-            position: absolute;
-            bottom: 10px;
-        }
-    }
-}
-
-@media (max-height: 629px) {
-    #contact-me-parent-comp {
-        height: 550px;
-    }
 }
