@@ -8,13 +8,13 @@ const expressStaticGzip = require('express-static-gzip')
 const app = express();
 const path = require('path')
 app.use(express.static(`${__dirname}/../build`))
-app.use(`/`, expressStaticGzip(`${__dirname}`, {
+app.use(`/build/client`, expressStaticGzip(`/build/client`, {
   enableBrotli: true,
   customCompressions: [{
       encodingName: 'deflate',
       fileExtension: 'zz'
   }],
-  orderPreference: ['br']
+  orderPreference: ['br', 'gz']
 }));
 app.use(json())
 
