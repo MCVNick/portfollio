@@ -23,7 +23,7 @@ const AboutMe = () => {
                         and feel a sense of accomplishment in a job well done. I
                         always strive to meet or exceed the requirements of a
                         project before me. I enjoy video games, Scouting, being
-                        outdoors and volunteering at my church
+                        outdoors and volunteering at my church.
                     </p>
                 </section>
             </div>
