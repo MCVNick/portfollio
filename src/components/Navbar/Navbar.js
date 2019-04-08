@@ -16,11 +16,11 @@ class Navbar extends Component {
     
         for (let i = 0; i < scrollWidth; i++) {
             if (i < (scrollWidth / 4)) {
-                setTimeout(function () {list.current.scrollLeft += 1}, i*5)
+                setTimeout(function () {list.current.scrollLeft += 1}, i * 1000 / scrollWidth)
             } else if (i < (3 * scrollWidth / 4)) {
-                setTimeout(function () {list.current.scrollLeft -= 1}, i*5)
+                setTimeout(function () {list.current.scrollLeft -= 1}, i * 1000 / scrollWidth)
             } else {
-                setTimeout(function () {list.current.scrollLeft += 1}, i*5)
+                setTimeout(function () {list.current.scrollLeft += 1}, i * 1000 / scrollWidth)
             }
         }
     }
