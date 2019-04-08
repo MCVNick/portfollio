@@ -12,18 +12,18 @@ const AboutMe = () => {
                 <section>
                     <h1>About Me</h1>
                     <p>
-                        As an achiever I love to learn every day. I also know 
-                        that every time I work on something that I can always 
-                        improve. This makes it easy for me to always push myself 
-                        forward into difficult tasks. I am also a very strategic 
-                        thinker; I can quickly find patterns and sort through a 
-                        mess of solutions to find the most efficient way to solve 
-                        a problem. But most of all I am an Includer. As an Includer 
-                        I love to find people who are looking into a group and 
-                        invite them in so that they can also participate in the 
-                        group. I can always find something to say about every 
-                        person I meet. I am very accepting and cast no judgement 
-                        onto others.
+                        Every day is an opportunity to learn something new
+                        and grow from experience. I’m a results oriented person
+                        who enjoys the challenges that writing code can present.
+                        My problem solving skills, as well as my strategic
+                        thinking give me the ability to quickly find efficient
+                        solution to a problem. I’m a self-starter and work well
+                        individually while also enjoying the interaction and
+                        dynamics of a team environment. I take pride in my work
+                        and feel a sense of accomplishment in a job well done. I
+                        always strive to meet or exceed the requirements of a
+                        project before me. I enjoy video games, Scouting, being
+                        outdoors and volunteering at my church
                     </p>
                 </section>
             </div>
