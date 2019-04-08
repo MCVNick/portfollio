@@ -57,6 +57,9 @@ async function mail(req) {
 app.post('/send', (req) => {
   mail(req)
 })
+app.get('/sitemap.xml', () => {
+  res.sendFile(`${__dirname}/../public/sitemap.xml`)
+})
 
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../build/index.html'))
