@@ -58,7 +58,7 @@ app.post('/send', (req) => {
   mail(req)
 })
 app.get('/sitemap.xml', () => {
-  res.sendFile(`${__dirname}/../public/sitemap.xml`)
+  res.sendFile(`${__dirname}/../sitemap.xml`)
 })
 
 app.get('*', (req, res) => {
