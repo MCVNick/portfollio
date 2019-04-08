@@ -1,133 +1,229 @@
 @import './../../variables';
-
 #projects-parent-comp {
     width: 100%;
 
-    h2 {
-        font-size: 32px;
-        padding: 10px;
-        z-index: 1;
-        border-bottom: 1px solid $primary-text-color;
-        width: 100%;
-        text-align: center;
-        max-width: 50%;
-        // min-width: $min-header-width;
-        margin-top: 50px;
-    }
-
     .projects {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        
-        h1 {
+
+        h2 {
+            padding: 25px 0 15px 0;
+            border-bottom: 1px solid $primary-text-color;
             z-index: 1;
             text-align: center;
-            font-size: 38px;
-            padding: 25px;
+            width: 100%;
+            min-width: 220px;
+            max-width: 621px;
         }
 
         article {
             display: flex;
             flex-direction: column;
             align-items: center;
-            max-width: 50%;
-            // min-width: $min-header-width;
 
-            details {
-                width: 100%;
+            h1 {
+                padding: 15px 0 5px 0;
                 z-index: 1;
-                outline: none;
-                font-size: 28px;
+                text-align: center;
+                width: 100%;
+                overflow: hidden;
+            }
+            details {
+                z-index: 1;
+                width: 100%;
+                min-width: 220px;
+                max-width: 621px;
+                margin: 5px;
 
-                p {
-                    border: none;
-                }
-                
-                .nsl-embedded {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    justify-items: center;
-                    align-content: center;
-                    align-items: center;
-                }
-                
                 summary {
-                    padding: 10px;
-                    text-align: center;
                     outline: none;
+                    width: 100%;
+                    min-width: 220px;
+                    max-width: 621px;
+                    text-align: center;
                 }
-
+                p {
+                    padding: 10px 0;
+                }
+                div {
+                    padding: 10px 0;
+                    iframe {
+                        width: 100%;
+                        min-width: 220px;
+                        max-width: 621px;
+                        height: 360px;
+                    }
+                }
                 .contain-video {
                     width: 100%;
                     height: 56.25%;
                     height: 0px;
                     padding-bottom: 56.25%;
                     position: relative;
-    
+                    min-width: 220px;
+                    max-width: 621px;
+                    margin: 0 0 20px 0;
+                    
                     video {
                         position: absolute;
-                        top: 0px;
+                        top: 10px;
                         left: 0px;
                         height: 100%;
                         width: 100%;
-                        margin: 0 0 25px 0;
                         z-index: 1;
                         background-color: #FBFAFB;
                     }
                 }
             }
-
+            .embedded-website {
+                display: none;
+            }
             .links {
+                min-width: 220px;
+                max-width: 621px;
                 display: flex;
-                flex-direction: row;
-                width: 100%;
-                text-align: center;
-                justify-content: center;
-                margin: 3px;
-
                 a {
                     z-index: 1;
-                    font-size: 20px;
+                    text-align: center;
                     white-space: nowrap;
-                    margin-top: 25px;
-                    margin-bottom: 3px;
-                    height: 45px;
+                    margin: 5px;
                 }
-
                 p {
-                    width: 10px;
+                    text-align: center;
+                    min-width: 0px;
+                    max-width: 5px;
+                    margin: 5px;
                     border: none;
-                    margin-top: 25px;
-                    margin-bottom: 3px;
-                    user-select: text;
+                    padding: 0;
                 }
             }
-            
-            iframe {
-                z-index: 1;
-                height: 360px;
-                width: 640px;
-                max-width: 50%;
-                // min-width: $min-header-width;
-                overflow-y: scroll;
-            }
-            
             p {
-                z-index: 1;
                 width: 100%;
-                font-size: 20px;
-                // margin: 3px;
+                min-width: 220px;
+                max-width: 621px;
                 border-bottom: 1px solid $primary-text-color;
-                padding-bottom: 25px;
-                user-select: text;
+                padding-bottom: 10px;
+                z-index: 1;
             }
-
             .not-ending-article-p-tag {
                 border: none;
-                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (min-width: 220px) and (max-width:480px) {
+    #projects-parent-comp {
+        .projects {
+            article {
+                .links {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 15px;
+
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 220px) and (max-width: 425px) {
+    #projects-parent-comp {
+        .projects {
+            h2 {
+                font-size: 28px;
+            }
+            article {
+                width: 99%;
+                h1 {
+                    font-size: 30px;
+                }
+                details {
+                    summary {
+                        font-size: 20px;
+                    }
+                }
+                .links {
+                    a {
+                        font-size: 16px;
+                    }
+                }
+                p {
+                    font-size: 18px;
+                }
+                .not-ending-article-p-tag {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 426px) and (max-width: 620px) {
+    #projects-parent-comp {
+        .projects {
+            h2 {
+                font-size: 30px;
+            }
+            article {
+                h1 {
+                    font-size: 32px;
+                }
+                details {
+                    summary {
+                        font-size: 22px;
+                    }
+                }
+                .links {
+                    a {
+                        font-size: 18px;
+                    }
+                }
+                p {
+                    font-size: 20px;
+                }
+                .not-ending-article-p-tag {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 621px) {
+    #projects-parent-comp {
+        .projects {
+            h2 {
+                font-size: 30px;
+            }
+            article {
+                h1 {
+                    font-size: 32px;
+                }
+                details {
+                    summary {
+                        font-size: 22px;
+                    }
+                }
+                .links {
+                    a {
+                        font-size: 18px;
+                    }
+                }
+                p {
+                    font-size: 20px;
+                }
+                .not-ending-article-p-tag {
+                    font-size: 20px;
+                }
+                .embedded-website {
+                    display: initial;
+                }
             }
         }
     }

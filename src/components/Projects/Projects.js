@@ -20,7 +20,7 @@ const Projects = () => {
                         <summary>Video Walkthrough</summary>
                         <div className='contain-video'><video src={nslVideo} controls='controls'/></div>
                     </details>
-                    <details>
+                    <details className='embedded-website'>
                         <summary>Embedded Website</summary>
                         <p>
                             Note: The website updates periodically to not hit an API 
@@ -44,7 +44,7 @@ const Projects = () => {
                     </p>
                 </article>
                 <article>
-                    <h1>PearProgramming Group Project</h1>
+                    <h1>Pear Programming Group Project</h1>
                     <details>
                         <summary>Video Walkthrough</summary>
                         <div className='contain-video'><video src={pearProgrammingVideo} controls='controls'/></div>
