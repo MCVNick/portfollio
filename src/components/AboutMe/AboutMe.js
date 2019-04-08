@@ -12,11 +12,11 @@ const AboutMe = () => {
                 <section>
                     <h1>About Me</h1>
                     <p>
-                        As an achiever I love to learn everyday. I also know 
+                        As an achiever I love to learn every day. I also know 
                         that every time I work on something that I can always 
                         improve. This makes it easy for me to always push myself 
                         forward into difficult tasks. I am also a very strategic 
-                        thinker, I can quickly find patterns and sort through a 
+                        thinker; I can quickly find patterns and sort through a 
                         mess of solutions to find the most efficient way to solve 
                         a problem. But most of all I am an Includer. As an Includer 
                         I love to find people who are looking into a group and 
