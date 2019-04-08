@@ -57,7 +57,7 @@ async function mail(req) {
 app.post('/send', (req) => {
   mail(req)
 })
-app.get('/sitemap.xml', () => {
+app.get('/sitemap.xml', (req, res) => {
   res.sendFile(`${__dirname}/../sitemap.xml`)
 })
 
