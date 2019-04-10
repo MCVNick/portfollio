@@ -4,6 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
+/server/nginx-selfsigned.key
+/server/nginx-selfsigned.crt
 
 # testing
 /coverage
