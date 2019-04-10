@@ -11,7 +11,7 @@ const app = express();
 const path = require('path')
 const sitemap = sm.createSitemap ({
   hostname: 'https://www.nicholasmcqueen.com',
-  cacheTime: 600000,
+  cacheTime: 31536000,
   urls: [
     { url: '/',  changefreq: 'daily', priority: 1.0 },
     { url: '/Home',  changefreq: 'daily', priority: 0.5 },
