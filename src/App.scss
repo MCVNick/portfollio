@@ -1,34 +1,40 @@
+// Here we are importing the partial file from sass
+// Partial files won't be compiled down
 @import './variables';
 
 .App {
     color: $primary-text-color;
-    background: rgb(23,18,111);
     background: linear-gradient(200deg, rgba(4,21,37,1) 0%, rgba(1,0,11,1) 100%);
     min-height: 100vh;
-    // min-width: $min-header-width;
 
+    // This tells all a tags to inherit the same color as every other text
     a {
         color: inherit;
     }
 
+    // Here we assume that the screen width is larger than 219px so we support it
+    // and don't display that we don't support it
     .not-supported {
         display: none;
     }
 
+    // On the non supported screen we still have particles, but because we are
+    // supported right now we have this not showing up.
     #not-supported-particles {
         display: none;
     }
 }
 
-@media (max-width: 425px) {
-    .App {
-        // min-width: 0px;
-    }
-}
-
+// This is what we do in the case that we don't support it
+// We don't support things with less than 220px (generous if you ask me)
 @media(max-width: 219px) {
     .App {
+        // Overflow becomes hidden so that the smaller we get we don't make
+        // it look too awful. Some characters may go off the screen at really
+        // small values
         overflow: hidden;
+
+        // Here we are turning off the display none on these two things
         .not-supported, #not-supported-particles {
             display: initial;
         }
@@ -46,6 +52,8 @@
         #not-supported-particles {
             z-index: 1;
         }
+
+        // And here we don't show anything else
         #nav-parent-comp, #home-parent-comp, #about-me-parent-comp,
         #skills-parent-comp, #projects-parent-comp, #contact-me-parent-comp,
         #blank-parent-comp {

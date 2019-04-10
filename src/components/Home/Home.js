@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Particle from './../Particles/Particle'
 import Footer from '../Footer/Footer';
 
 import './Home.scss'
@@ -18,7 +17,6 @@ const Home = (props) => {
             </div>
             <div className='secret-blank-page' onClick={() => {console.log(props.history.push('/blank'))}}></div>
             <Footer />
-            <Particle />
         </main>
     )
 }

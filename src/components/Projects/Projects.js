@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Particle from './../Particles/Particle'
 import Footer from './../Footer/Footer'
 
 import nslVideo from './../../resources/nslVideo.mp4'
@@ -86,7 +85,6 @@ const Projects = () => {
                 </article>
             </div>
             <Footer />
-            <Particle />
         </main>
     )
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Particle from './../Particles/Particle'
 import Footer from './../Footer/Footer'
 
 import './AboutMe.scss'
@@ -28,7 +27,6 @@ const AboutMe = () => {
                 </section>
             </div>
             <Footer />
-            <Particle />
         </main>
     )
 }

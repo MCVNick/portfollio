@@ -7,7 +7,7 @@ import './Particle.scss'
 
 const Particle = () => {
     return (
-        <div id='particle-parent-comp'>
+        <div className='particle-parent-comp'>
             <Particles params={particles} />
         </div>
     )

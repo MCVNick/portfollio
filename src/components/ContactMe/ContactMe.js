@@ -1,7 +1,6 @@
 import React, { createRef } from 'react'
 import axios from 'axios'
 
-import Particle from './../Particles/Particle'
 import Footer from './../Footer/Footer'
 
 import facebookIcon from './../../resources/Facebook.png'
@@ -56,7 +55,6 @@ const ContactMe = () => {
                 </form>
             </div>
             <Footer />
-            <Particle />
         </main>
     )
 }

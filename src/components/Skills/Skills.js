@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Particle from './../Particles/Particle'
 import Footer from './../Footer/Footer'
 
 import CSS3 from './../../resources/SkillIcons/CSS3.png'
@@ -57,7 +56,6 @@ const Skills = () => {
                 </ul>
             </div>
             <Footer />
-            <Particle />
         </main>
     )
 }

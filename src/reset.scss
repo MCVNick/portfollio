@@ -21,7 +21,7 @@ padding: 0;
 border: 0;
 font-size: 100%;
 font-family: 'Montserrat', sans-serif; /* changed */
-font-weight: 400;
+font-weight: 400; /* changed */
 vertical-align: baseline;
 box-sizing: border-box; /* added */
 position: relative; /* added */
@@ -51,6 +51,8 @@ border-collapse: collapse;
 border-spacing: 0;
 }
 
+// Added this which is going to show a specific font when certain conditions are met
+// Font-display allows us to have another font appear while the other one loads
 @font-face {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
