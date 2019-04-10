@@ -5,6 +5,7 @@ const { json } = require('express')
 const nodemailer = require('nodemailer')
 const expressStaticGzip = require('express-static-gzip')
 const sm = require('sitemap')
+const fs = require('fs')
 
 const app = express();
 const path = require('path')
@@ -33,6 +34,10 @@ app.use(`/build/client`, expressStaticGzip(`/build/client`, {
 app.use(json())
 
 const port = 4000
+const options = {
+  key: fs.readFileSync(__dirname + '/nginx-selfsigned.key'),
+  cert: fs.readFileSync(__dirname + '/nginx-selfsigned.crt')
+}
 app.listen(port, console.log('The server is running on port', port))
 
 async function mail(req) {
