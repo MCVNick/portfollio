@@ -1,32 +1,8 @@
 @import './../../variables';
 
-// #foot-parent-comp {
-//     height: 50px;
-//     display: flex;
-//     justify-content: center;
-//     width: 100%;
-//     // min-width: $min-header-width;
-    
-//     div {
-//         width: 50%;
-//         // min-width: $min-header-width;
-//         align-items: center;
-//         flex-direction: row;
-//         display: flex;
-        
-//         p {
-//             margin-right: auto;
-//             margin-left: 10px;
-//             z-index: 1;
-//         }
-        
-//         img {
-//             width: 50px;
-//             padding: 0 10px;
-//             z-index: 1;
-//         }
-//     }
-// }
+#foot-parent-comp {
+    z-index: 1;
+}
 
 @media (min-width: 220px) and (max-width: 360px) {
     #foot-parent-comp {
