@@ -14,15 +14,29 @@ const Projects = () => {
             <div className='projects'>
                 <h2>Projects</h2>
                 <article>
+                    <h1>799 Scouts Website</h1>
+                    {/* <details>
+                        <summary>Video Walkthrough</summary>
+                    </details> */}
+                    <div className="links">
+                        <a target="_blank" rel="noopener noreferrer" href='https://github.com/MCVNick/799scouts'>799 Scouts GitHub</a>
+                        <p>|</p>
+                        <a target="_blank" rel="noopener noreferrer" href='https://www.799scouts.com/'>799 Scouts Website</a>
+                    </div>
+                    <p>This is the scouts website for troop and pack 799. I am currently working on it,
+                        so you will have to visit the website to see what it looks like.
+                    </p>
+                </article>
+                <article>
                     <h1>NSL Personal Project</h1>
                     <details>
                         <summary>Video Walkthrough</summary>
-                        <div className='contain-video'><video src={nslVideo} controls='controls'/></div>
+                        <div className='contain-video'><video src={nslVideo} controls='controls' /></div>
                     </details>
                     <details className='embedded-website'>
                         <summary>Embedded Website</summary>
                         <p>
-                            Note: The website updates periodically to not hit an API 
+                            Note: The website updates periodically to not hit an API
                             cap. You may need to refresh the page if clicking on an
                             article results in an empty page.
                         </p>
@@ -33,12 +47,12 @@ const Projects = () => {
                         <p>|</p>
                         <a target="_blank" rel="noopener noreferrer" href='https://nsl.nicholasmcqueen.com/'>NSL Website</a>
                     </div>
-                    <p>This was a three week project that I was able to work on cloning 
-                        KSL's website. In this project I learned how to use CSS Grid, 
+                    <p>This was a three week project that I was able to work on cloning
+                        KSL's website. In this project I learned how to use CSS Grid,
                         SCSS, JavaScript to manipulate classes and cause tabs to close.
-                        I also worked on form validation and the back end. The back 
-                        end used massive. It also was able to control when the web 
-                        page loaded new content. This allowed for the API that I was 
+                        I also worked on form validation and the back end. The back
+                        end used massive. It also was able to control when the web
+                        page loaded new content. This allowed for the API that I was
                         using to not hit it's daily limit.
                     </p>
                 </article>
@@ -46,7 +60,7 @@ const Projects = () => {
                     <h1>Pear Programming Group Project</h1>
                     <details>
                         <summary>Video Walkthrough</summary>
-                        <div className='contain-video'><video src={pearProgrammingVideo} controls='controls'/></div>
+                        <div className='contain-video'><video src={pearProgrammingVideo} controls='controls' /></div>
                     </details>
                     <div className='links'>
                         <a target="_blank" rel="noopener noreferrer" href='https://github.com/sudorm-rfdot/pearprogramming'>PearProgramming GitHub</a>
@@ -70,7 +84,7 @@ const Projects = () => {
                     <h1>Magic Card Personal Project</h1>
                     <details>
                         <summary>Video Walkthrough</summary>
-                        <div className='contain-video'><video src={mtgVideo} controls='controls'/></div>
+                        <div className='contain-video'><video src={mtgVideo} controls='controls' /></div>
                     </details>
                     <div className='links'>
                         <a target="_blank" rel="noopener noreferrer" href='https://github.com/MCVNick/crud-magic-api'>PearProgramming GitHub</a>
