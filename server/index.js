@@ -33,7 +33,7 @@ app.use(`/build/client`, expressStaticGzip(`/build/client`, {
 }));
 app.use(json())
 
-const port = 4000
+const port = 4004
 const options = {
   key: fs.readFileSync(__dirname + '/nginx-selfsigned.key'),
   cert: fs.readFileSync(__dirname + '/nginx-selfsigned.crt')
